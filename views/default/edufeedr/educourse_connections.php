@@ -20,9 +20,7 @@
 		$body .= '<ul>';
 		$action_url = $vars['url'] . 'action/edufeedr/download_educourse_sn_tsv?educourse=' . $vars['entity']->getGUID();
 		/*translation:Tab separated social network data*/
-		$body .= '<li><a href="'.elgg_add_action_tokens_to_url($action_url).'">'.elgg_echo('edufeedr:action:download_sn_tsv_data_file').'</a>';
-		/*translation:(can be used in %s)*/
-		$body .= ' '.sprintf(elgg_echo('edufeedr:explanation:can_be_used_in'), '<a href="http://manyeyes.alphaworks.ibm.com/" target="_blank">Many Eyes</a>') . '</li>';
+		$body .= '<li><a href="'.elgg_add_action_tokens_to_url($action_url).'">'.elgg_echo('edufeedr:action:download_sn_tsv_data_file').'</a></li>';
 		$body .= '</ul>';
 		$body .= '</div>';
 		$body .= '</div>';
